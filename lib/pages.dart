@@ -4,9 +4,16 @@ import 'package:flutter_app/page/random_words.dart';
 import 'package:flutter_app/page/text_practice.dart';
 import 'package:flutter_app/page/top_lake.dart';
 
+import 'page/box_practice.dart';
+import 'page/container_practice.dart';
 import 'page/image_practice.dart';
+import 'page/row_column_prctice.dart';
+import 'page/scaffold_practice.dart';
+import 'page/stack_practice.dart';
 import 'page/switch_checkbox_practice.dart';
 import 'page/text_field_practice.dart';
+import 'page/transform_practice.dart';
+import 'page/wrap_practice.dart';
 
 List<AppPage> _buildAppPages() {
   final List<AppPage> appPages = <AppPage>[
@@ -44,6 +51,41 @@ List<AppPage> _buildAppPages() {
       title: "TextField",
       routeName: TextFieldPractice.routeName,
       buildRoute: (BuildContext context) => TextFieldPractice(),
+    ),
+    AppPage(
+      title: "RowColumnPractice",
+      routeName: RowColumnPractice.routeName,
+      buildRoute: (BuildContext context) => RowColumnPractice(),
+    ),
+    AppPage(
+      title: "WrapPractice",
+      routeName: WrapPractice.routeName,
+      buildRoute: (BuildContext context) => WrapPractice(),
+    ),
+    AppPage(
+      title: "StackPractice",
+      routeName: StackPractice.routeName,
+      buildRoute: (BuildContext context) => StackPractice(),
+    ),
+    AppPage(
+      title: "BoxPractice",
+      routeName: BoxPractice.routeName,
+      buildRoute: (BuildContext context) => BoxPractice(),
+    ),
+    AppPage(
+      title: "TransformPractice",
+      routeName: TransformPractice.routeName,
+      buildRoute: (BuildContext context) => TransformPractice(),
+    ),
+    AppPage(
+      title: "ContainerPractice",
+      routeName: ContainerPractice.routeName,
+      buildRoute: (BuildContext context) => ContainerPractice(),
+    ),
+    AppPage(
+      title: "ScaffoldPractice",
+      routeName: ScaffoldPractice.routeName,
+      buildRoute: (BuildContext context) => ScaffoldPractice(),
     ),
   ];
   return appPages;

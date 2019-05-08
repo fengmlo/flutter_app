@@ -14,6 +14,9 @@ import 'package:flutter_app/page/scrollable/list_view_practice.dart';
 import 'package:flutter_app/page/container/row_column_prctice.dart';
 import 'package:flutter_app/page/container/scaffold_practice.dart';
 import 'package:flutter_app/page/scrollable/scroll_view_practice.dart';
+import 'page/functional/inherited_widget_practice.dart';
+import 'page/functional/theme_practice.dart';
+import 'page/functional/will_pop_scope_practice.dart';
 import 'page/scrollable/scroll_controller_practice.dart';
 import 'package:flutter_app/page/container/stack_practice.dart';
 import 'package:flutter_app/page/base/switch_checkbox_practice.dart';
@@ -122,6 +125,21 @@ List<AppPage> _buildAppPages() {
       title: "ScrollControllerPractice",
       routeName: ScrollControllerPractice.routeName,
       buildRoute: (BuildContext context) => ScrollControllerPractice(),
+    ),
+    AppPage(
+      title: "WillPopScopePractice",
+      routeName: WillPopScopePractice.routeName,
+      buildRoute: (BuildContext context) => WillPopScopePractice(),
+    ),
+    AppPage(
+      title: "InheritedWidgetPractice",
+      routeName: InheritedWidgetPractice.routeName,
+      buildRoute: (BuildContext context) => InheritedWidgetPractice(),
+    ),
+    AppPage(
+      title: "ThemePractice",
+      routeName: ThemePractice.routeName,
+      buildRoute: (BuildContext context) => ThemePractice(),
     ),
   ];
   return appPages;

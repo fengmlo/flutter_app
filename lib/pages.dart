@@ -14,6 +14,8 @@ import 'package:flutter_app/page/scrollable/list_view_practice.dart';
 import 'package:flutter_app/page/container/row_column_prctice.dart';
 import 'package:flutter_app/page/container/scaffold_practice.dart';
 import 'package:flutter_app/page/scrollable/scroll_view_practice.dart';
+import 'page/event/guesture_detector_practice.dart';
+import 'page/event/pointer_event_practice.dart';
 import 'page/functional/inherited_widget_practice.dart';
 import 'page/functional/theme_practice.dart';
 import 'page/functional/will_pop_scope_practice.dart';
@@ -140,6 +142,16 @@ List<AppPage> _buildAppPages() {
       title: "ThemePractice",
       routeName: ThemePractice.routeName,
       buildRoute: (BuildContext context) => ThemePractice(),
+    ),
+    AppPage(
+      title: "PointerEventPractice",
+      routeName: PointerEventPractice.routeName,
+      buildRoute: (BuildContext context) => PointerEventPractice(),
+    ),
+    AppPage(
+      title: "GesturePractice",
+      routeName: GesturePractice.routeName,
+      buildRoute: (BuildContext context) => GesturePractice(),
     ),
   ];
   return appPages;

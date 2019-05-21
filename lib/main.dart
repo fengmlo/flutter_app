@@ -7,20 +7,6 @@ void main() => runApp(App());
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    final wordPair = WordPair.random();
-//    return MaterialApp(
-//      title: 'Welcome to Flutter',
-//      home: Scaffold(
-//        appBar: AppBar(
-//          title: Text('Welcome to Flutter'),
-//        ),
-//        body: Center(
-////          child: Text('Hello World'),
-////          child: Text(wordPair.asPascalCase),
-//          child: RandomWords(), // ... this highlighted text
-//        ),
-//      ),
-//    );
     return MaterialApp(
       title: 'Startup Name Generator',
       theme: ThemeData(

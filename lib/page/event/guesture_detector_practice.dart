@@ -1,85 +1,24 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/page/list_practice.dart';
 
 class GesturePractice extends StatelessWidget {
   static const routeName = "gesture_practice";
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: SafeArea(
-        child: ListView(
-          children: <Widget>[
-            ListTile(
-              title: Text("GestureDetectorPractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return GestureDetectorPractice();
-                      },
-                    ),
-                  ),
-            ),
-            ListTile(
-              title: Text("DragPractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return DragPractice();
-                      },
-                    ),
-                  ),
-            ),
-            ListTile(
-              title: Text("ScalePractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return ScalePractice();
-                      },
-                    ),
-                  ),
-            ),
-            ListTile(
-              title: Text("GestureRecognizerPractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return GestureRecognizerPractice();
-                      },
-                    ),
-                  ),
-            ),
-            ListTile(
-              title: Text("GestureArenaPractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return GestureArenaPractice();
-                      },
-                    ),
-                  ),
-            ),
-            ListTile(
-              title: Text("GestureConflictPractice"),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return GestureConflictPractice();
-                      },
-                    ),
-                  ),
-            ),
-          ],
-        ),
-      ),
-    );
+    return PracticeListView(<SimplePage>[
+      SimplePage(
+          title: "GestureDetectorPractice", route: GestureDetectorPractice()),
+      SimplePage(title: "DragPractice", route: DragPractice()),
+      SimplePage(title: "ScalePractice", route: ScalePractice()),
+      SimplePage(
+          title: "GestureRecognizerPractice",
+          route: GestureRecognizerPractice()),
+      SimplePage(title: "GestureArenaPractice", route: GestureArenaPractice()),
+      SimplePage(
+          title: "GestureConflictPractice", route: GestureConflictPractice())
+    ]);
   }
 }
 

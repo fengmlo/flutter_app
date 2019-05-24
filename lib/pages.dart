@@ -14,6 +14,7 @@ import 'package:flutter_app/page/scrollable/list_view_practice.dart';
 import 'package:flutter_app/page/container/row_column_prctice.dart';
 import 'package:flutter_app/page/container/scaffold_practice.dart';
 import 'package:flutter_app/page/scrollable/scroll_view_practice.dart';
+import 'page/animation/animation_practice.dart';
 import 'page/event/guesture_detector_practice.dart';
 import 'page/event/pointer_event_practice.dart';
 import 'page/functional/inherited_widget_practice.dart';
@@ -152,6 +153,11 @@ List<AppPage> _buildAppPages() {
       title: "GesturePractice",
       routeName: GesturePractice.routeName,
       buildRoute: (BuildContext context) => GesturePractice(),
+    ),
+    AppPage(
+      title: "AnimationPractice",
+      routeName: AnimationPractice.routeName,
+      buildRoute: (BuildContext context) => AnimationPractice(),
     ),
   ];
   return appPages;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/page/base/button_practice.dart';
+import 'package:flutter_app/page/io/io_practice.dart';
 import 'package:flutter_app/page/random_words.dart';
 import 'package:flutter_app/page/base/text_practice.dart';
 import 'package:flutter_app/page/top_lake.dart';
@@ -158,6 +159,11 @@ List<AppPage> _buildAppPages() {
       title: "AnimationPractice",
       routeName: AnimationPractice.routeName,
       buildRoute: (BuildContext context) => AnimationPractice(),
+    ),
+    AppPage(
+      title: "IoPractice",
+      routeName: IoPractice.routeName,
+      buildRoute: (BuildContext context) => IoPractice(),
     ),
   ];
   return appPages;
